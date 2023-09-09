@@ -10,7 +10,7 @@ const taskRoute = require('./routers/task');
 
 const app = express();
 // setup port follow environment to be able run on heroku
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 
 // register middleware, must be adding is above other app.use calls
 // app.use((req, res, next) => {
