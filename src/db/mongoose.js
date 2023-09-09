@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 
-mongoose.connect('mongodb://127.0.0.1:27017/task-manager-api', {
+mongoose.connect(process.env.MONGODB_URL, {
     useNewUrlParser: true,
     // make sure when mongoose works with mongodb, our indexes are created allowing us to quickly access the data we need to access
     useCreateIndex: true
